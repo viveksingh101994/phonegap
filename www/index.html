@@ -30,7 +30,13 @@
     <link rel="stylesheet" type="text/css" href="css/index.css" />
     <link rel="stylesheet" type="text/css" href="css/onsen.css" />
     <link rel="stylesheet" type="text/css" href="css/onsen-css-components.min.css" />
-    
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous"></script>
+    <!-- <script src="http://sdks.shopifycdn.com/js-buy-sdk/v1/latest/index.umd.min.js"></script> -->
+    <script src="https://sdks.shopifycdn.com/js-buy-sdk/latest/shopify-buy.polyfilled.globals.min.js"></script>
+    <script src = "js/buysdk.js"></script>
     <title>Hello World</title>
 </head>
 
@@ -104,7 +110,7 @@
     <script type="text/javascript" src="cordova.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
     <script type="text/javascript" src="js/onsenui.min.js"></script>
-    
+
 </body>
 
 </html>
@@ -139,4 +145,6 @@ document.addEventListener('prechange', function(event) {
   document.querySelector('ons-toolbar .center')
     .innerHTML = event.tabItem.getAttribute('label');
 });
+
+
 </script>
